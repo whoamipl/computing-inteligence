@@ -1,0 +1,27 @@
+## correction rules
+if (Sepal.Length <= 0 && Sepal.Length >= 30) {
+    Sepal.Lenght <- NA
+}
+
+if (Sepal.Length < Petal.Length) {
+    Sepal.Length <- NA
+}
+
+if (Sepal.Width <= 0) {
+    Sepal.Width <- NA
+}
+
+if (Petal.Length < 0) {
+    Petal.Length <- NA
+}
+
+if (Petal.Length <= 2 * Petal.Width) {
+   Petal.Length <- NA 
+}
+
+if (Petal.Width < 0) {
+    Petal.Width <- 0
+}
+if (Species != "setosa" && Species != "versicolor" && Species != "virginica") {
+    Species <- NA
+}
